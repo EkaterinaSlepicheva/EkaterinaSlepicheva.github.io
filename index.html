@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekaterina Slepicheva</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="13-2.png" alt="">
+        <h3 class="name">Ekaterina Slepicheva</h3>
+        <p class="post">QA Еngineer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Contacts</a></li>
+            <li><a href="#about">About me</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+
+        <h3>Hello!</h3>
+        <h3 class="name">My name is <span>Ekaterina</span></h3>
+        <h3 class="post">and i am <span class="typing-text">QA Еngineer</span></h3>
+
+        <a href="#"><button class="btn">Hire me</button></a>
+
+        <div class="share">
+            <a href="#" class="fab fa-telegram"></a>
+            <a href="#" class="fa fa-envelope"></a>
+            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">About me</h1>
+
+        <div class="content">
+            <h3 class="name">My name is <span>Ekaterina Slepicheva</span></h3>
+            <p>I am a test engineer, I have been working in the field for 2 years. I will be glad to join your team. Let's make a quality product together.</p>
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>Postman<span>85%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>SQL<span>85%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Charles <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background:linear-gradient(0deg,#eb8770,#975281, #123661);"></span>
+    <span style="background:linear-gradient(70deg, rgb(110, 30, 184), rgb(191, 50, 125),#FF8DFB)"></span>
+    <span style="background:linear-gradient(#dfbead, #cb7a79)"></span>
+    <span style="background:linear-gradient(#348EA2, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+var type = new Typed('.typing-text',{
+        strings : [ 'QA Engeneer', 'QA Engineer', 'team player' ],
+        typeSpeed: 180,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+
+</body>
+</html>
